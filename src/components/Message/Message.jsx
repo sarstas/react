@@ -1,6 +1,11 @@
 import React from "react";
-import './Message.scss'
+import './Message.scss';
 
-export const Message = ({ text }) => {
-    return <h3>This - {text}</h3>
+export const Message = ({ mes }) => {
+    return (
+        <>
+            <p className="message__text">{mes.text}</p>
+            <p className="message__author">author: {mes.author}</p>
+        </>
+    );
 }
