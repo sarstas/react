@@ -15,7 +15,6 @@ const arrMessages = [
         text: "place holder Message"
     },
 ];
-
 const userStyles = makeStyles({
     main: {
         display: 'flex',

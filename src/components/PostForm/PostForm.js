@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {AUTHORS} from "../utils/constants";
-import {Button, Input} from "@mui/material";
+import {Button, Input, TextField} from "@mui/material";
 import {userStyles} from "./PostFormStyle";
 
 export const PostForm = ({ onSendMessage }) => {
@@ -23,12 +23,13 @@ export const PostForm = ({ onSendMessage }) => {
     };
     return(
         <form className={classes.form} onSubmit={handleSubmit}>
-            <Input
+
+            <TextField
+                id="standard-basic"
+                label="Text message"
+                variant="standard"
                 className={classes.form__input}
                 required
-                variant="Standard"
-                type="text"
-                placeholder='Text message'
                 value={text}
                 onChange={handleChange}
                 autoFocus={true}
