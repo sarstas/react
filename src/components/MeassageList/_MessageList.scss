@@ -1,0 +1,10 @@
+.message {
+  border: 1px solid antiquewhite;
+  width: 300px;
+  display: grid;
+  &__author {
+    text-align: start;
+    font-size: 13px;
+    margin: 10px;
+  }
+}
